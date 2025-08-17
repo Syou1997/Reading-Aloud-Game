@@ -314,4 +314,165 @@ export default {
 .close-button:hover {
   background-color: #388e3c;
 }
+/* === RWD：請貼在本檔 <style scoped> 最後，僅做響應式覆蓋 === */
+
+/* 大螢幕到筆電 */
+@media (max-width: 1280px) {
+  .ranking-container {
+    padding: 1.5rem;
+  }
+  .title {
+    font-size: 1.9rem;
+    margin-bottom: 1.5rem;
+  }
+  .ranking-table {
+    max-width: 1000px;
+  }
+}
+
+/* 平板（直/橫） */
+@media (max-width: 1024px) {
+  .header {
+    gap: 0.75rem;
+  }
+  .back-button {
+    font-size: 1.1rem;
+  }
+  .reset-button {
+    padding: 0.45rem 0.9rem;
+  }
+
+  .ranking-table {
+    width: 100%;
+    max-width: none;
+  }
+  .ranking-table th,
+  .ranking-table td {
+    padding: 0.85rem;
+  }
+
+  .pagination {
+    gap: 0.4rem;
+    margin-top: 1.5rem;
+  }
+  .pagination button {
+    padding: 0.45rem 0.9rem;
+  }
+
+  .modal-content {
+    width: 86%;
+    max-width: 420px;
+    padding: 1.6rem;
+  }
+}
+
+/* 手機（≤ 768px）：保持動畫，縮字縮距，表格可水平滑動 */
+@media (max-width: 768px) {
+  .ranking-container {
+    padding: 1rem;
+    min-height: 100vh; /* 保留滿版視覺與動畫 */
+  }
+
+  .header {
+    flex-wrap: wrap;
+    gap: 0.5rem 0.75rem;
+  }
+  .reset-button {
+    order: 2; /* 只調整排列順序，不改結構 */
+  }
+
+  .title {
+    font-size: 1.6rem;
+    margin: 1rem 0 1.25rem;
+  }
+
+  /* 讓表格在小螢幕不擠壓，啟用水平捲動（不改 DOM） */
+  .ranking-table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 10px;
+  }
+  .ranking-table table {
+    width: 100%;
+  }
+  .ranking-table thead th {
+    white-space: nowrap;
+  }
+  .ranking-table tbody td {
+    white-space: nowrap;
+  }
+  /* 若想視覺更緊湊 */
+  .ranking-table th,
+  .ranking-table td {
+    padding: 0.75rem 0.85rem;
+    font-size: 0.95rem;
+  }
+
+  .delete-icon {
+    font-size: 1.1rem;
+  }
+
+  .pagination {
+    gap: 0.35rem;
+    margin-top: 1.25rem;
+  }
+  .pagination button {
+    padding: 0.45rem 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  .modal-content {
+    width: 90%;
+    padding: 1.4rem;
+    border-radius: 8px;
+  }
+  .close-button {
+    padding: 0.55rem 1rem;
+  }
+}
+
+/* 極小螢幕（≤ 480px）：再縮字與留白 */
+@media (max-width: 480px) {
+  .back-button {
+    font-size: 1rem;
+  }
+  .reset-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  .title {
+    font-size: 1.45rem;
+    margin-bottom: 1rem;
+  }
+
+  .ranking-table {
+    border-radius: 8px;
+  }
+  .ranking-table th,
+  .ranking-table td {
+    padding: 0.6rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .pagination {
+    gap: 0.3rem;
+  }
+  .pagination button {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.9rem;
+    border-radius: 5px;
+  }
+
+  .modal-content {
+    width: 92%;
+    padding: 1.2rem;
+  }
+  .close-button {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.95rem;
+  }
+}
+
 </style>

@@ -121,4 +121,104 @@ nav {
     }
   }
 }
+/* === RWD：請貼在本檔 <style scoped> 最後，僅做響應式覆蓋 === */
+
+/* 大螢幕到筆電 */
+@media (max-width: 1280px) {
+  header .title {
+    font-size: 2.6rem;
+  }
+  nav .btn {
+    width: 56%;
+    max-width: 320px;
+    padding: 0.95rem;
+  }
+  nav .btn .link {
+    font-size: 1.4rem;
+  }
+}
+
+/* 平板（直/橫） */
+@media (max-width: 1024px) {
+  header {
+    height: 22vh;
+  }
+  header .title {
+    font-size: 2.3rem;
+    letter-spacing: 1.5px;
+  }
+
+  nav {
+    padding: 0 1rem;
+  }
+  nav .btn {
+    width: 70%;
+    max-width: 360px;
+    margin: 1.2rem 0;
+    padding: 0.9rem 1rem;
+    border-radius: 14px;
+  }
+  nav .btn .link {
+    font-size: 1.3rem;
+    letter-spacing: 0.8px;
+  }
+}
+
+/* 手機（≤ 768px）：縱向堆疊更緊湊 */
+@media (max-width: 768px) {
+  .container {
+    font-size: 15px; /* 不影響你的動畫類別 */
+  }
+
+  header {
+    height: 20vh;
+    padding: 0 0.75rem;
+  }
+  header .title {
+    font-size: 1.9rem;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  nav {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  nav .btn {
+    width: 100%;
+    max-width: none;
+    margin: 0.9rem 0;
+    padding: 0.85rem 1rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+  }
+  nav .btn .link {
+    font-size: 1.15rem;
+  }
+}
+
+/* 極小螢幕（≤ 480px）：再縮字與間距 */
+@media (max-width: 480px) {
+  header {
+    height: 18vh;
+  }
+  header .title {
+    font-size: 1.65rem;
+  }
+
+  nav {
+    padding: 0 0.75rem;
+  }
+  nav .btn {
+    margin: 0.75rem 0;
+    padding: 0.75rem 0.9rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+  }
+  nav .btn .link {
+    font-size: 1.05rem;
+    letter-spacing: 0.5px;
+  }
+}
+
 </style>

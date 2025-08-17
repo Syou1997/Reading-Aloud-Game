@@ -313,4 +313,205 @@ export default {
     }
   }
 }
+/* === RWD：請貼在本檔 <style scoped> 最後，僅做響應式覆蓋 === */
+
+/* 大螢幕到筆電 */
+@media (max-width: 1280px) {
+  .container header {
+    height: 72px;
+    padding: 0 1.25rem;
+  }
+  .container header h2 {
+    font-size: 2rem;
+  }
+
+  .container section {
+    padding: 1.5rem 0;
+  }
+  .container section .table {
+    width: 88%;
+    padding: 1.25rem 1.5rem;
+    gap: 1.25rem;
+  }
+
+  .container section .table .row .cell.title {
+    font-size: 1.2rem;
+  }
+  .container section .table .row .cell.content select {
+    font-size: 1rem;
+  }
+
+  .container .btn-area .btn {
+    padding: 1.2rem 2.4rem;
+    font-size: 1.6rem;
+  }
+  .container .btn-area .btn .p1,
+  .container .btn-area .btn .p2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* 平板（直/橫） */
+@media (max-width: 1024px) {
+  .container header {
+    height: 66px;
+    padding: 0 1rem;
+  }
+  .container header .back {
+    font-size: 2.2rem;
+    margin-right: 0.9rem;
+  }
+  .container header h2 {
+    font-size: 1.9rem;
+  }
+
+  .container section {
+    padding: 1.25rem 0;
+  }
+  .container section .table {
+    width: 92%;
+    padding: 1rem 1.25rem;
+  }
+
+  /* 仍維持左右兩欄，但比例微調 */
+  .container section .table .row .cell.title {
+    width: 30%;
+  }
+  .container section .table .row .cell.content,
+  .container section .table .row .box-area {
+    width: 70%;
+  }
+
+  .container section .table .row .box-area {
+    gap: 0.8rem 1rem;
+  }
+  .container section .table .row .box-area label {
+    font-size: 1.05rem;
+  }
+
+  .container .btn-area {
+    height: 90px;
+  }
+  .container .btn-area .btn {
+    padding: 1rem 2rem;
+  }
+}
+
+/* 手機（≤ 768px）：改為直向堆疊，縮小留白避免截斷 */
+@media (max-width: 768px) {
+  .container {
+    font-size: 15px; /* 緊湊但不影響動畫 */
+  }
+
+  .container header {
+    height: 60px;
+    padding: 0 0.9rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  }
+  .container header .back {
+    font-size: 2rem;
+    margin-right: 0.8rem;
+  }
+  .container header h2 {
+    font-size: 1.6rem;
+  }
+
+  .container section {
+    padding: 1rem 0;
+    background-color: #fff;
+  }
+  .container section .table {
+    width: 94%;
+    padding: 0.9rem 1rem;
+    gap: 1rem;
+    border-radius: 10px;
+  }
+
+  /* 兩欄 → 一欄堆疊 */
+  .container section .table .row {
+    align-items: stretch;
+  }
+  .container section .table .row .cell.title,
+  .container section .table .row .cell.content {
+    width: 100%;
+  }
+  .container section .table .row .cell.title {
+    text-align: left;
+    font-size: 1.05rem;
+    padding-bottom: 0.4rem;
+  }
+  .container section .table .row .cell.content {
+    display: block;
+  }
+  .container section .table .row .cell.content select {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .container section .table .row .box-area {
+    width: 100%;
+    gap: 0.7rem 1rem;
+  }
+  .container section .table .row .box-area label {
+    font-size: 1rem;
+  }
+  .container section .table .row .box-area input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+  }
+
+  .container .btn-area {
+    height: 84px;
+  }
+  .container .btn-area .btn {
+    padding: 0.9rem 1.6rem;
+    font-size: 1.4rem;
+    border-radius: 10px;
+  }
+  .container .btn-area .btn .p1,
+  .container .btn-area .btn .p2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* 極小螢幕（≤ 480px）：再縮字與間距 */
+@media (max-width: 480px) {
+  .container {
+    font-size: 14px;
+  }
+  .container header {
+    height: 56px;
+  }
+  .container header h2 {
+    font-size: 1.45rem;
+  }
+
+  .container section .table {
+    width: 96%;
+    padding: 0.75rem 0.85rem;
+    gap: 0.85rem;
+  }
+  .container section .table .row .cell.title {
+    font-size: 1rem;
+  }
+  .container section .table .row .cell.content select {
+    font-size: 0.95rem;
+    padding: 0.45rem 0.7rem;
+  }
+
+  .container .btn-area {
+    height: 78px;
+  }
+  .container .btn-area .btn {
+    padding: 0.8rem 1.4rem;
+    font-size: 1.25rem;
+    box-shadow: 0 2px 6px rgba(72,179,70,0.45);
+  }
+  .container .btn-area .btn .p1,
+  .container .btn-area .btn .p2 {
+    font-size: 1.4rem;
+  }
+}
+
 </style>

@@ -352,4 +352,166 @@ body {
     }
   }
 }
+
+/* =========================
+   RWD：只追加覆寫，不更動既有規則
+   斷點：1200px / 992px / 768px / 480px
+   ========================= */
+
+/* 大型筆電與小桌機 */
+@media (max-width: 1200px) {
+  .container header h2 { font-size: 2.2rem; }
+  .container section { width: 86vw; }
+  .container section .table .row .cell.title { font-size: 1.1rem; }
+  .container .btn-area .btn { padding: 1.2rem 2.2rem; font-size: 1.6rem; }
+  .container .btn-area .btn .p1,
+  .container .btn-area .btn .p2 { font-size: 1.8rem; }
+}
+
+/* 平板橫/直 */
+@media (max-width: 992px) {
+  /* 允許內容在小螢幕可捲動（不影響動畫） */
+  html, body, .container { overflow: auto; }
+
+  .container header {
+    height: 16vh;
+    padding: 0 1.25rem;
+  }
+  .container header .back { font-size: 2rem; margin-right: 1rem; }
+  .container header h2 { font-size: 2rem; }
+
+  .container section {
+    width: 92vw;
+    height: auto;            /* 讓區塊隨內容延展 */
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+  }
+
+  .container section .table .row {
+    gap: .5rem;
+  }
+
+  .container section .table .row .cell.title {
+    width: 30%;
+    font-size: 1rem;
+    padding: .8rem;
+  }
+  .container section .table .row .cell.content {
+    width: 70%;
+  }
+
+  .container section .table .row .box-area {
+    width: 100%;
+    gap: 1rem;
+    padding-left: 0;
+  }
+  .container section .table .row .box-area label { font-size: 1.1rem; }
+  .container section .table .row .cell.content input[type="text"],
+  .container section .table .row .cell.content select {
+    font-size: 1rem;
+    padding: .5rem .8rem;
+  }
+
+  .container .btn-area { margin-top: 1.25rem; }
+  .container .btn-area .btn {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    border-radius: 10px;
+  }
+  .container .btn-area .btn .p1,
+  .container .btn-area .btn .p2 { font-size: 1.6rem; }
+}
+
+/* 手機（大） */
+@media (max-width: 768px) {
+  .container header {
+    height: auto;
+    padding: .75rem 1rem;
+  }
+  .container header .back { font-size: 1.8rem; margin-right: .75rem; }
+  .container header h2 {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+
+  .container section {
+    width: 94vw;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  /* 欄位上下堆疊 */
+  .container section .table .row .cell.title,
+  .container section .table .row .cell.content {
+    width: 100%;
+  }
+
+  .container section .table .row .cell.title {
+    text-align: left;
+    font-size: 1rem;
+    padding: .65rem .8rem;
+  }
+
+  .container section .table .row .cell.content input[type="text"],
+  .container section .table .row .cell.content select {
+    width: 100%;
+    font-size: 1rem;
+    padding: .6rem .75rem;
+  }
+
+  .container section .table .row .box-area {
+    gap: .75rem 1rem;
+  }
+  .container section .table .row .box-area label {
+    font-size: 1rem;
+  }
+  .container section .table .row .box-area input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+  }
+
+  .container .btn-area .btn {
+    width: 92%;
+    padding: .9rem 1rem;
+    font-size: 1.2rem;
+  }
+  .container .btn-area .btn .p1,
+  .container .btn-area .btn .p2 { font-size: 1.4rem; }
+}
+
+/* 手機（小） */
+@media (max-width: 480px) {
+  .container { height: auto; min-height: 100vh; }
+  .container header .back { font-size: 1.6rem; }
+  .container header h2 { font-size: 1.4rem; }
+
+  .container section {
+    width: 96vw;
+    padding: .85rem;
+    margin: 1rem auto 0;
+  }
+
+  .container section .table { gap: .75rem; }
+
+  .container section .table .row .cell.title {
+    font-size: .95rem;
+    padding: .55rem .7rem;
+  }
+  .container section .table .row .cell.content input[type="text"],
+  .container section .table .row .cell.content select {
+    font-size: .95rem;
+    padding: .5rem .7rem;
+  }
+
+  .container .btn-area { margin-top: 1rem; }
+  .container .btn-area .btn {
+    width: 94%;
+    padding: .8rem 1rem;
+    font-size: 1.1rem;
+    border-radius: 8px;
+  }
+  .container .btn-area .btn .p1,
+  .container .btn-area .btn .p2 { font-size: 1.2rem; }
+}
+
 </style>
