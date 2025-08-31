@@ -112,6 +112,7 @@ export default {
           },
           closeModal() {
                this.showModal = false;
+               this.$router.push({ name: "home" });
           },
           saveResult() {
                const ListOld = JSON.parse(localStorage.getItem("List")) || [];
@@ -126,6 +127,7 @@ export default {
           },
           closeSavedModal() {
                this.savedModalVisible = false;
+               this.$router.push({ name: "home" });
           },
           lose() {
                clearInterval(this.timer);

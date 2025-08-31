@@ -30,7 +30,6 @@ export default {
   },
   methods: {
     back() {
-
       this.$router.push({ name: "PracticeModeMenu" });
     },
     next() {
@@ -42,9 +41,6 @@ export default {
       if (this.currentIndex > 0) {
         this.currentIndex--;
       }
-    },
-    handleSelectChange(event) {
-      this.currentIndex = this.words.findIndex(word => word.name === event.target.value);
     },
     initQuestions() {
       let tempList = [];
@@ -71,6 +67,7 @@ export default {
       }
 
       this.questions = tempList;
+      this.currentIndex = 0; // 重新載入題目時，把下拉與畫面同步到第一個
     }
   },
   mounted() {
@@ -83,8 +80,9 @@ export default {
   <div class="container">
     <!-- 上方選單 -->
     <div class="select-container">
-      <select @change="handleSelectChange">
-        <option v-for="(word, index) in words" :key="index" :value="word.name">
+      <!-- 綁定 currentIndex，選單與前/下一題自動同步 -->
+      <select v-model.number="currentIndex">
+        <option v-for="(word, index) in words" :key="index" :value="index">
           {{ word.name }}
         </option>
       </select>
@@ -111,6 +109,7 @@ export default {
     </div>
   </div>
 </template>
+
 
 <style lang="scss" scoped>
 .container {
