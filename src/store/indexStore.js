@@ -153,12 +153,12 @@ export default defineStore("indexStore", {
             {
                 lesson: 4,
                 words: [
-                    { type: "名詞", name: "起きます", reading: "おきます" },
-                    { type: "名詞", name: "寝ます", reading: "ねます" },
-                    { type: "名詞", name: "働きます", reading: "はたらきます" },
-                    { type: "名詞", name: "休みます", reading: "やすみます" },
-                    { type: "名詞", name: "勉強します", reading: "べんきょうします" },
-                    { type: "名詞", name: "終わります", reading: "おわります" },
+                    { type: "動詞", name: "起きます", reading: "おきます" },
+                    { type: "動詞", name: "寝ます", reading: "ねます" },
+                    { type: "動詞", name: "働きます", reading: "はたらきます" },
+                    { type: "動詞", name: "休みます", reading: "やすみます" },
+                    { type: "動詞", name: "勉強します", reading: "べんきょうします" },
+                    { type: "動詞", name: "終わります", reading: "おわります" },
                     { type: "名詞", name: "デパート", reading: "" },
                     { type: "名詞", name: "銀行", reading: "ぎんこう" },
                     { type: "名詞", name: "郵便局", reading: "ゆうびんきょく" },
