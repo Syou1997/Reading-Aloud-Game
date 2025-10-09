@@ -204,6 +204,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+/* ====== 全域字體設定 ====== */
+* {
+  font-family: "Yu Kyokasho", "游教科書体", "Hiragino KyoKasho StdN", "MS Mincho", serif;
+}
+
 .container {
      height: 100vh;
      padding: 1rem;

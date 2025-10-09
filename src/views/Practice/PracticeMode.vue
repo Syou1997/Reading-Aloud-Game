@@ -70,7 +70,7 @@ export default {
       }
 
       this.questions = tempList;
-      this.currentIndex = 0; // 重新載入題目時，把下拉與畫面同步到第一個
+      this.currentIndex = 0;
     },
 
     // 放大顯示控制
@@ -152,7 +152,6 @@ export default {
       aria-modal="true"
       @click="closeWordZoom"
     >
-      <!-- 使用全螢幕白底，置中顯示；點任意處關閉 -->
       <div class="wordstage" title="どこでもクリックして閉じる">
         <div class="wordstage-inner">
           <ruby class="wordstage-text">
@@ -185,6 +184,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+/* ====== 全域字體設定 ====== */
+* {
+  font-family: "Yu Kyokasho", "游教科書体", "Hiragino KyoKasho StdN", "MS Mincho", serif;
+}
+
 /* ====== 既有區塊 ====== */
 .container {
   display: flex;
@@ -193,7 +197,6 @@ export default {
   height: 100vh;
   padding: 1rem;
   box-sizing: border-box;
-  font-family: "Arial", sans-serif;
 }
 
 .select-container {
@@ -283,7 +286,7 @@ export default {
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(17, 24, 39, 0.6); /* 晦澀遮罩 */
+  background: rgba(17, 24, 39, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -292,7 +295,7 @@ export default {
 }
 @keyframes overlayFade { from { opacity: 0; } to { opacity: 1; } }
 
-/* ====== 圖片放大（維持原版式樣） ====== */
+/* ====== 圖片放大 ====== */
 .overlay-content {
   max-width: 92vw;
   max-height: 86vh;
@@ -319,22 +322,18 @@ export default {
   user-select: none;
 }
 
-/* ====== 文字全螢幕放大（新） ====== */
-.overlay--word {
-  /* 全螢幕遮罩 + 內層舞台採白底滿版 */
-}
-
+/* ====== 文字全螢幕放大 ====== */
 .wordstage {
   width: 100vw;
   height: 100vh;
-  background: #ffffff;              /* 全白背景，字更清楚 */
+  background: #ffffff;
   display: flex;
   flex-direction: column;
-  justify-content: center;          /* 垂直置中 */
-  align-items: center;              /* 水平置中 */
+  justify-content: center;
+  align-items: center;
   animation: stageIn 0.16s ease-out;
-  cursor: pointer;                  /* 任意處可點擊關閉 */
-  padding: 4vh 3vw;                 /* 邊緣留白，避免貼邊 */
+  cursor: pointer;
+  padding: 4vh 3vw;
   box-sizing: border-box;
 }
 @keyframes stageIn { from { transform: scale(0.985); opacity: 0; } to { transform: scale(1); opacity: 1; } }
@@ -343,27 +342,24 @@ export default {
   max-width: 90vw;
   max-height: 78vh;
   display: grid;
-  place-items: center;              /* 置中排版 */
+  place-items: center;
   text-align: center;
 }
 
 .wordstage-text {
-  /* 以視窗單位極大化，並保留自適應：以較小者為準以避免溢出（vw 與 vh 取 min） */
-  /* 同時以 clamp 保護在超小/超大裝置上的可讀性 */
   font-size: clamp(2.4rem, min(16vw, 18vh), 10rem);
   line-height: 1.1;
   color: #111827;
   user-select: none;
-  white-space: pre-wrap;            /* 若含空格或較長字仍可換行 */
-  word-break: keep-all;             /* 日文/中文保持字詞自然換行 */
+  white-space: pre-wrap;
+  word-break: keep-all;
 }
 .wordstage-rt {
-  /* furigana 按母字等比縮小（約 0.35～0.45 倍），並以 clamp 限制 */
   font-size: clamp(0.9rem, min(5.5vw, 6vh), 3rem);
   color: #4b5563;
 }
 
-/* ====== 既有 RWD ====== */
+/* ====== RWD ====== */
 @media (max-width: 600px) {
   .word-name {
     font-size: 1.5rem;
@@ -377,7 +373,6 @@ export default {
     gap: 0.8rem;
   }
 
-  /* 全螢幕文字在手機上仍盡量填滿，但保留上下邊界 */
   .wordstage {
     padding: 5vh 4vw;
   }
