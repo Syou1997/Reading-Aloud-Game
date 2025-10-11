@@ -71,7 +71,7 @@ export default {
       }
       if (this.hoka === "true") {
         this.lessons[this.lesson].words.forEach((item) => {
-          // 規格統一：その他
+          // 規格統一：そのほか
           if (item.type === "そのほか") tempList.push(item);
         });
       }
