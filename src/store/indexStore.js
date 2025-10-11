@@ -498,7 +498,6 @@ export default defineStore("indexStore", {
                     { type: "動詞", name: "います", reading: "います" },
                     { type: "動詞", name: "かかります", reading: "かかります" },
                     { type: "動詞", name: "やすみます", reading: "やすみます" },
-
                     { type: "名詞", name: "ひとつ", reading: "" },
                     { type: "名詞", name: "ふたつ", reading: "" },
                     { type: "名詞", name: "みっつ", reading: "" },
