@@ -929,7 +929,9 @@ export default defineStore("indexStore", {
                     { type: "動詞", name: "考えます", reading: "かんがえます" },
                     { type: "動詞", name: "着きます", reading: "つきます" },
                     { type: "動詞", name: "留学します", reading: "りゅうがくします" },
-                    { type: "名詞", name: "年を取ります", reading: "としをとります" },
+                    { type: "動詞", name: "年を取ります", reading: "としをとります" },
+                    { type: "動詞", name: "足ります", reading: "たります" },
+                    { type: "動詞", name: "頑張ります", reading: "がんばります" },
                     { type: "名詞", name: "田舎", reading: "いなか" },
                     { type: "名詞", name: "グループ", reading: "" },
                     { type: "名詞", name: "チャンス", reading: "" },
@@ -940,7 +942,6 @@ export default defineStore("indexStore", {
                     { type: "そのほか", name: "こと", reading: "" },
                     { type: "そのほか", name: "いっぱい飲みましょう", reading: "いっぱいのみましょう" },
                     { type: "そのほか", name: "いろいろお世話になりました", reading: "いろいろおせわになりました" },
-                    { type: "そのほか", name: "頑張ります", reading: "がんばります" }
                 ]
             }, {
                 lesson: 26,
