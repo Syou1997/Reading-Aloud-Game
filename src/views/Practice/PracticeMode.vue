@@ -40,15 +40,20 @@ export default {
     next() { if (this.currentIndex < this.totalCount - 1) this.currentIndex++; },
     prev() { if (this.currentIndex > 0) this.currentIndex--; },
 
-    initQuestions() {
-      let tempList = [];
-      if (this.v === "true")   this.lessons[this.lesson].words.forEach(i => { if (i.type === "動詞")   tempList.push(i); });
-      if (this.n === "true")   this.lessons[this.lesson].words.forEach(i => { if (i.type === "名詞")   tempList.push(i); });
-      if (this.adj === "true") this.lessons[this.lesson].words.forEach(i => { if (i.type === "形容詞") tempList.push(i); });
-      if (this.hoka === "true")this.lessons[this.lesson].words.forEach(i => { if (i.type === "そのほか") tempList.push(i); }); // 規格統一
-      this.questions = tempList;
-      this.currentIndex = 0;
-    },
+initQuestions() {
+  const lessonData = this.lessons[this.lesson];
+  if (!lessonData) return;
+
+  this.questions = lessonData.words.filter(word => {
+    if (this.v === "true" && word.type === "動詞") return true;
+    if (this.n === "true" && word.type === "名詞") return true;
+    if (this.adj === "true" && word.type === "形容詞") return true;
+    if (this.hoka === "true" && word.type === "そのほか") return true;
+    return false;
+  });
+
+  this.currentIndex = 0;
+},
 
     // ===== 放大行為 =====
     openWordZoom() { if (this.currentQuestion?.name) this.showWordZoom = true; },
