@@ -61,7 +61,7 @@ export default defineStore("indexStore", {
                     { type: "名詞", name: "ドイツ", reading: "" },
                     { type: "名詞", name: "日本", reading: "にほん" },
                     { type: "名詞", name: "ブラジル", reading: "" },
-                    { type: "名詞", name: "台湾", reading: "にほん" },
+                    { type: "名詞", name: "台湾", reading: "たいわん" },
                 ]
             },
             {
