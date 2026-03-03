@@ -88,7 +88,7 @@ export default defineStore("indexStore", {
                     { type: "名詞", name: "時計", reading: "とけい" },
                     { type: "名詞", name: "傘", reading: "かさ" },
                     { type: "名詞", name: "鞄", reading: "かばん" },
-                    { type: "名詞", name: "CD", reading: "シーディー" },
+                    { type: "名詞", name: "シーディー", reading: "" },
                     { type: "名詞", name: "テレビ", reading: "" },
                     { type: "名詞", name: "ラジオ", reading: "" },
                     { type: "名詞", name: "カメラ", reading: "" },
