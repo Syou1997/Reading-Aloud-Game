@@ -514,6 +514,8 @@ export default defineStore("indexStore", {
                     { type: "名詞", name: "女の子", reading: "おんなのこ" },
                     { type: "名詞", name: "犬", reading: "いぬ" },
                     { type: "名詞", name: "猫", reading: "ねこ" },
+                    { type: "名詞", name: "パンダ", reading: "" },
+                    { type: "名詞", name: "象", reading: "ぞう" },
                     { type: "名詞", name: "木", reading: "き" },
                     { type: "名詞", name: "物", reading: "もの" },
                     { type: "名詞", name: "電池", reading: "でんち" },
@@ -527,9 +529,12 @@ export default defineStore("indexStore", {
                     { type: "名詞", name: "窓", reading: "まど" },
                     { type: "名詞", name: "ポスト", reading: "" },
                     { type: "名詞", name: "ビル", reading: "" },
+                    { type: "名詞", name: "エーティーエム", reading: "" },
+                    { type: "名詞", name: "コンビニ", reading: "" },
                     { type: "名詞", name: "公園", reading: "こうえん" },
                     { type: "名詞", name: "喫茶店", reading: "きっさてん" },
                     { type: "名詞", name: "本屋", reading: "ほんや" },
+                    { type: "名詞", name: "～屋", reading: "～や" },
                     { type: "名詞", name: "乗り場", reading: "のりば" },
                     { type: "名詞", name: "県", reading: "けん" },
                     { type: "名詞", name: "上", reading: "うえ" },
@@ -544,9 +549,8 @@ export default defineStore("indexStore", {
                     { type: "名詞", name: "近く", reading: "ちかく" },
                     { type: "名詞", name: "間", reading: "あいだ" },
                     { type: "そのほか", name: "～や～[など]", reading: "" },
-                    { type: "そのほか", name: "一番", reading: "いちばん" },
-                    { type: "そのほか", name: "段目", reading: "だんめ" },
-                    { type: "そのほか", name: "奥", reading: "おく" }
+                    { type: "名詞", name: "ナンプラー", reading: "" },
+                    { type: "名詞", name: "コーナー", reading: "" },
                 ]
             }, {
                 lesson: 11,
