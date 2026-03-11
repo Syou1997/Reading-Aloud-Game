@@ -766,13 +766,14 @@ export default defineStore("indexStore", {
                     { type: "名詞", name: "服", reading: "ふく" },
                     { type: "名詞", name: "製品", reading: "せいひん" },
                     { type: "名詞", name: "ソフト", reading: "" },
-                    { type: "名詞", name: "専門", reading: "せんもん" },
+                    { type: "名詞", name: "電子辞書", reading: "でんしじしょ" },
+                    { type: "名詞", name: "経済", reading: "けいざい" },
+                    { type: "名詞", name: "市役所", reading: "しやくしょ" },
+                    { type: "名詞", name: "高校", reading: "こうこう" },
                     { type: "名詞", name: "歯医者", reading: "はいしゃ" },
                     { type: "名詞", name: "床屋", reading: "とこや" },
-                    { type: "名詞", name: "プレイガイド", reading: "" },
                     { type: "名詞", name: "独身", reading: "どくしん" },
-                    { type: "そのほか", name: "特に", reading: "とくに" },
-                    { type: "そのほか", name: "思い出します", reading: "おもいだします" }
+                    { type: "動詞", name: "思い出します", reading: "おもいだします" }
                 ]
             }, {
                 lesson: 16,
