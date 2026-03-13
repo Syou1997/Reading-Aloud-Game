@@ -913,6 +913,8 @@ export default defineStore("indexStore", {
                 words: [
                     { type: "動詞", name: "要ります", reading: "いります" },
                     { type: "動詞", name: "調べます", reading: "しらべます" },
+                    { type: "動詞", name: "直します［自転車を］", reading: "なおします［じてんしゃを］" },
+                    { type: "動詞", name: "直します［答えを］", reading: "なおします［こたえを］" },
                     { type: "動詞", name: "修理します", reading: "しゅうりします" },
                     { type: "名詞", name: "僕", reading: "ぼく" },
                     { type: "名詞", name: "君", reading: "きみ" },
@@ -931,6 +933,8 @@ export default defineStore("indexStore", {
                     { type: "そのほか", name: "みんなで", reading: "" },
                     { type: "そのほか", name: "～けど", reading: "" },
                     { type: "そのほか", name: "おなかがいっぱいです", reading: "" },
+                    { type: "そのほか", name: "よかったら", reading: "" },
+                    { type: "形容詞", name: "いろいろ", reading: "" },
 
                 ]
             }
