@@ -1049,23 +1049,23 @@ export default defineStore("indexStore", {
             , {
                 lesson: 24,
                 words: [
-                    { type: "動詞", name: "くれます", reading: "くれます" },
+                    { type: "動詞", name: "くれます", reading: "" },
                     { type: "動詞", name: "直します", reading: "なおします" },
                     { type: "動詞", name: "連れて行きます", reading: "つれていきます" },
                     { type: "動詞", name: "連れて来ます", reading: "つれてきます" },
                     { type: "動詞", name: "送ります", reading: "おくります" },
-                    { type: "名詞", name: "紹介します", reading: "しょうかいします" },
-                    { type: "名詞", name: "案内します", reading: "あんないします" },
-                    { type: "名詞", name: "説明します", reading: "せつめいします" },
-                    { type: "名詞", name: "淹れます", reading: "いれます" },
+                    { type: "動詞", name: "紹介します", reading: "しょうかいします" },
+                    { type: "動詞", name: "案内します", reading: "あんないします" },
+                    { type: "動詞", name: "説明します", reading: "せつめいします" },
                     { type: "名詞", name: "おじいさん", reading: "" },
                     { type: "名詞", name: "おばあさん", reading: "" },
+                    { type: "名詞", name: "準備", reading: "じゅんび" },
+                    { type: "名詞", name: "引っ越し", reading: "ひっこし" },
                     { type: "名詞", name: "お菓子", reading: "おかし" },
-                    { type: "名詞", name: "お弁当", reading: "おべんとう" },
+                    { type: "名詞", name: "ホームステイ", reading: "" },
                     { type: "名詞", name: "全部", reading: "ぜんぶ" },
-                    { type: "名詞", name: "自分で", reading: "じぶんで" },
-                    { type: "名詞", name: "他に", reading: "ほかに" },
-                    { type: "そのほか", name: "お疲れ様でした", reading: "おつかれさまでした" }
+                    { type: "そのほか", name: "自分で", reading: "じぶんで" },
+
                 ]
             }, {
                 lesson: 25,
@@ -1076,16 +1076,13 @@ export default defineStore("indexStore", {
                     { type: "動詞", name: "年を取ります", reading: "としをとります" },
                     { type: "動詞", name: "足ります", reading: "たります" },
                     { type: "動詞", name: "頑張ります", reading: "がんばります" },
+                    { type: "名詞", name: "大使館 ", reading: "たいしかん" },
                     { type: "名詞", name: "田舎", reading: "いなか" },
                     { type: "名詞", name: "グループ", reading: "" },
                     { type: "名詞", name: "チャンス", reading: "" },
                     { type: "名詞", name: "億", reading: "おく" },
                     { type: "そのほか", name: "もし", reading: "" },
-                    { type: "そのほか", name: "いくら", reading: "" },
                     { type: "そのほか", name: "転勤", reading: "てんきん" },
-                    { type: "そのほか", name: "こと", reading: "" },
-                    { type: "そのほか", name: "いっぱい飲みましょう", reading: "いっぱいのみましょう" },
-                    { type: "そのほか", name: "いろいろお世話になりました", reading: "いろいろおせわになりました" },
                 ]
             }, {
                 lesson: 26,
