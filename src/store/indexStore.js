@@ -1628,9 +1628,12 @@ export default defineStore("indexStore", {
             }, {
                 lesson: 36,
                 words: [
+                    { type: "動詞", name: "届きます［荷物が］", reading: "とどきます［にもつが］" },
+                    { type: "動詞", name: "出ます［試合に］", reading: "でます［しあいに" },
                     { type: "動詞", name: "会います［事故に〜］", reading: "あいます［じこに〜］" },
                     { type: "動詞", name: "貯金します", reading: "ちょきんします" },
-                    { type: "動詞", name: "過ぎます［7時を〜］", reading: "すぎます［しちじを〜］" },
+                    { type: "動詞", name: "過ぎます［七時を］", reading: "すぎます［しちじを〜］" },
+                    { type: "動詞", name: "慣れます［習慣に］", reading: "なれます［しゅうかんに］" },
                     { type: "動詞", name: "慣れます［仕事に〜］", reading: "なれます［しごとに〜］" },
                     { type: "動詞", name: "腐ります［食べ物が〜］", reading: "くさります［たべものが〜］" },
                     { type: "名詞", name: "剣道", reading: "けんどう" },
@@ -1641,21 +1644,18 @@ export default defineStore("indexStore", {
                     { type: "名詞", name: "毎週", reading: "まいしゅう" },
                     { type: "名詞", name: "毎月", reading: "まいつき" },
                     { type: "名詞", name: "毎年", reading: "まいとし" },
-                    { type: "名詞", name: "このごろ", reading: "" },
+                    { type: "そのほか", name: "この頃", reading: "このごろ" },
                     { type: "そのほか", name: "やっと", reading: "" },
                     { type: "そのほか", name: "かなり", reading: "" },
                     { type: "そのほか", name: "必ず", reading: "かならず" },
                     { type: "そのほか", name: "絶対に", reading: "ぜったいに" },
                     { type: "そのほか", name: "上手に", reading: "じょうずに" },
                     { type: "そのほか", name: "できるだけ", reading: "" },
-                    { type: "そのほか", name: "ほとんど", reading: "" },
-                    { type: "名詞", name: "ショパン", reading: "" },
+                    { type: "そのほか", name: "殆ど", reading: "ほとんど" },
                     { type: "名詞", name: "お客様", reading: "おきゃくさま" },
-                    { type: "形容詞", name: "特別な", reading: "とくべつな" },
-                    { type: "動詞", name: "していらっしゃいます", reading: "" },
+                    { type: "形容詞", name: "特別［な］", reading: "とくべつ［な］" },
                     { type: "名詞", name: "水泳", reading: "すいえい" },
                     { type: "動詞", name: "違います", reading: "ちがいます" },
-                    { type: "動詞", name: "使っていらっしゃるんですね", reading: "つかっていらっしゃるんですね" },
                     { type: "動詞", name: "チャレンジします", reading: "" },
                     { type: "名詞", name: "気持ち", reading: "きもち" },
                     { type: "名詞", name: "乗り物", reading: "のりもの" },
@@ -1668,6 +1668,7 @@ export default defineStore("indexStore", {
                     { type: "動詞", name: "運びます", reading: "はこびます" },
                     { type: "動詞", name: "利用します", reading: "りようします" },
                     { type: "そのほか", name: "自由に", reading: "じゆうに" },
+
 
                 ]
             }, {
