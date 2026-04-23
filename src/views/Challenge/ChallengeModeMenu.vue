@@ -80,7 +80,6 @@ export default {
               <option value=1>lesson1</option>
               <option value=2>lesson2</option>
               <option value=3>lesson3</option>
-              <option value=3>lesson3</option>
               <option value=4>lesson4</option>
               <option value=5>lesson5</option>
               <option value=6>lesson6</option>
