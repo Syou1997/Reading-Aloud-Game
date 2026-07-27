@@ -1190,7 +1190,6 @@ export default defineStore("indexStore", {
                     { type: "そのほか", name: "自由に", reading: "じゆうに" },
                     { type: "名詞", name: "空", reading: "そら" },
                     { type: "動詞", name: "飛びます", reading: "とびます" },
-                    { type: "名詞", name: "昔", reading: "むかし" },
                     { type: "名詞", name: "自分", reading: "じぶん" },
                     { type: "名詞", name: "将来", reading: "しょうらい" },
                     { type: "名詞", name: "ドラえもん", reading: "" },
