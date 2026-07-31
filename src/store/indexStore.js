@@ -2038,7 +2038,7 @@ export default defineStore("indexStore", {
                     { type: "動詞", name: "上がります［値段が〜］", reading: "あがります［ねだんが〜］" },
                     { type: "動詞", name: "下がります［値段が〜］", reading: "さがります［ねだんが〜］" },
                     { type: "動詞", name: "切れます［ひもが〜］", reading: "きれます［ひもが〜］" },
-                    { type: "動詞", name: "取れます［ボタンが］", reading: "とれます［ぼたんが〜］" },
+                    { type: "動詞", name: "取れます［ボタンが］", reading: "とれます［ボタンが］" },
                     { type: "動詞", name: "落ちます［荷物が〜］", reading: "おちます［にもつが〜］" },
                     { type: "動詞", name: "なくなります［ガソリンが〜］", reading: "" },
                     { type: "動詞", name: "なくなります［財布が〜］", reading: "なくなります［さいふが〜］" },
