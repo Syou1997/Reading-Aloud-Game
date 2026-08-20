@@ -302,7 +302,7 @@ export default defineStore("indexStore", {
                     { type: "動詞", name: "買います", reading: "かいます" },
                     { type: "動詞", name: "撮ります[写真を~]", reading: "とります[しゃしんを~]" },
                     { type: "動詞", name: "します", reading: "" },
-                    { type: "動詞", name: "会います[友達に~]", reading: "あいます" },
+                    { type: "動詞", name: "会います[友達に~]", reading: "あいます[ともだちに~]" },
                     { type: "名詞", name: "ご飯", reading: "ごはん" },
                     { type: "名詞", name: "朝ご飯", reading: "あさごはん" },
                     { type: "名詞", name: "昼ご飯", reading: "ひるごはん" },
