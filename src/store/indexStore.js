@@ -1638,7 +1638,7 @@ export default defineStore("indexStore", {
                 words: [
                     { type: "動詞", name: "届きます［荷物が］", reading: "とどきます［にもつが］" },
                     { type: "動詞", name: "出ます［試合に］", reading: "でます［しあいに" },
-                    { type: "動詞", name: "会います［事故に〜］", reading: "あいます［じこに〜］" },
+                    { type: "動詞", name: "遭います［事故に〜］", reading: "あいます［じこに〜］" },
                     { type: "動詞", name: "貯金します", reading: "ちょきんします" },
                     { type: "動詞", name: "過ぎます［七時を］", reading: "すぎます［しちじを〜］" },
                     { type: "動詞", name: "慣れます［習慣に］", reading: "なれます［しゅうかんに］" },
